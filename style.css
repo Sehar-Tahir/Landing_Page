@@ -1,0 +1,142 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.5;
+    font-size: 16px;
+    background-color: #d0eaed;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.navbar {
+    height: 60px;
+    background-color: #3f2da5;
+}
+
+h2 {
+    color: #fff;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.logo {
+    font-size: large;
+    font-weight: bold;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+li a {
+    color: #fff;
+    text-decoration-line: none;
+    padding-right: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+li a:hover {
+    color: #74d3dc;
+    cursor: pointer;
+    text-decoration-line: underline;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.header {
+    color: #fff;
+    background-color: #3f2da5;
+    min-height: 320px;
+    margin-top: 25px;
+}
+
+.header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 1.2;
+    padding-bottom: 20px;
+}
+
+.header img {
+    max-width: 330px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px 0 skyblue;
+}
+
+.header {
+    display: flex;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+p {
+    padding-bottom: 20px;
+}
+
+button {
+    background-color: #4830d0;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 10px;
+    border: 0.2px solid white;
+}
+
+button:hover {
+    background-color: #654bf8;
+    cursor: pointer;
+}
+
+.boxes .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.box {
+    flex: 1;
+    background-color: #3f2da5;
+    color: #fff;
+    border-radius: 10px;
+    margin: 20px 10px;
+    padding: 15px 20px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.6);
+}
+
+.box:hover {
+    background-color: #654bf8;
+    cursor: pointer;
+}
+
+@media (max-width: 786px) {
+    .header .container {
+        flex-direction: column;
+        padding-top: 20px;
+        padding-bottom: 30px;
+        text-align: center;
+    }
+
+    .boxes .container {
+        display: block;
+    }
+}
